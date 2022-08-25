@@ -10,3 +10,21 @@ For format consistency's sake some icons may have been edited slightly:
 - names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus` and `Perl REST::Client` were changed to `OS2`, `GNULinux`, `MTK  Nucleus` and `Perl RESTClient` respectively due to special symbols
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.ru/staticpages/devicedetector/).
+
+Example of convenient use in PHP:
+```php
+#Initialize device detector
+$dd = (new \DeviceDetector\DeviceDetector($_SERVER['HTTP_USER_AGENT']));
+$dd->parse();
+#Get OS
+$os = $dd->getOs();
+#Get client
+$client = $dd->getClient();
+#Set OS and client icon if they exist
+if (is_file('/img/devicedetector/os/'.$os['name'].'.webp')) {
+    $os['icon'] = '/img/devicedetector/os/'.$os['name'].'.webp';
+}
+if (is_file('/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp')) {
+    $client['icon'] = '/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp';
+}
+```
