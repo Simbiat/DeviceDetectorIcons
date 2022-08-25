@@ -28,3 +28,4 @@ if (is_file('/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp'))
     $client['icon'] = '/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp';
 }
 ```
+For a more elaborate use (audit page), check this [php](https://github.com/Simbiat/simbiat.ru/blob/master/lib/simbiat.ru/src/usercontrol/Pages/Sessions.php) (for backend) and [twig](https://github.com/Simbiat/simbiat.ru/blob/master/twig/usercontrol/sessions.twig) (for frontend) files.
