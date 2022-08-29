@@ -9,7 +9,7 @@ For format consistency's sake some icons may have been edited slightly:
 - all icons were converted to lossless WebP format
 - names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus` and `Perl REST::Client` were changed to `OS2`, `GNULinux`, `MTK  Nucleus` and `Perl RESTClient` respectively due to special symbols
 
-If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.ru/staticpages/devicedetector/).
+If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.ru/simplepages/devicedetector/).
 
 Example of convenient use in PHP:
 ```php
