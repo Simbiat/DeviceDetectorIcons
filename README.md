@@ -9,7 +9,7 @@ For format consistency's sake some icons may have been edited slightly:
 - all icons were converted to lossless WebP format
 - names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus` and `Perl REST::Client` were changed to `OS2`, `GNULinux`, `MTK  Nucleus` and `Perl RESTClient` respectively due to special symbols
 
-If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.ru/simplepages/devicedetector/).
+If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.dev/simplepages/devicedetector/).
 
 Example of convenient use in PHP:
 ```php
@@ -28,4 +28,4 @@ if (is_file('/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp'))
     $client['icon'] = '/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp';
 }
 ```
-For a more elaborate use (audit page), check this [php](https://github.com/Simbiat/simbiat.ru/blob/master/lib/simbiat.ru/src/usercontrol/Pages/Sessions.php) (for backend) and [twig](https://github.com/Simbiat/simbiat.ru/blob/master/twig/usercontrol/sessions.twig) (for frontend) files.
+For a more elaborate use (audit page), check this [php](https://github.com/Simbiat/simbiat.dev/blob/master/lib/simbiat.ru/src/usercontrol/Pages/Sessions.php) (for backend) and [twig](https://github.com/Simbiat/simbiat.ru/blob/master/twig/usercontrol/sessions.twig) (for frontend) files.
