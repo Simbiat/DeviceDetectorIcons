@@ -7,7 +7,7 @@ For format consistency's sake some icons may have been edited slightly:
 - side-text removed, unless necessary for differentiation of the icon from similar yet unrelated ones or essential to the logo
 - solid background removed (for transparency), unless it is part of the brand, or it otherwise deemed important to readability
 - all icons were converted to lossless WebP format
-- names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus` and `Perl REST::Client` were changed to `OS2`, `GNULinux`, `MTK  Nucleus` and `Perl RESTClient` respectively due to special symbols
+- names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client` and `HTTP:Tiny` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient` and `HTTP Tiny` respectively due to special symbols
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.dev/simplepages/devicedetector/).
 
