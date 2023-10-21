@@ -6,7 +6,7 @@ For format consistency's sake some icons may have been edited slightly:
 - all icons with dimensions over 1200x1200 pixels were resized to 1200x1200 (I doubt that anyone would need larger versions for potential use cases)
 - side-text removed, unless necessary for differentiation of the icon from similar yet unrelated ones or essential to the logo
 - solid background removed (for transparency), unless it is part of the brand, or it otherwise deemed important to readability
-- all icons were converted to lossless WebP format
+- all icons were converted to lossless WebP format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed
 - names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client` and `HTTP:Tiny` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient` and `HTTP Tiny` respectively due to special symbols
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.dev/simplepages/devicedetector/).
@@ -21,11 +21,11 @@ $os = $dd->getOs();
 #Get client
 $client = $dd->getClient();
 #Set OS and client icon if they exist
-if (is_file('/img/devicedetector/os/'.$os['name'].'.webp')) {
-    $os['icon'] = '/img/devicedetector/os/'.$os['name'].'.webp';
+if (is_file('/img/devicedetector/client/os/'.$os['name'].'.webp')) {
+    $os['icon'] = '/img/devicedetector/client/os/'.$os['name'].'.webp';
 }
-if (is_file('/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp')) {
-    $client['icon'] = '/img/devicedetector/'.$client['type'].'/'.$client['name'].'.webp';
+if (is_file('/img/devicedetector/client/'.$client['type'].'/'.$client['name'].'.webp')) {
+    $client['icon'] = '/img/devicedetector/client/'.$client['type'].'/'.$client['name'].'.webp';
 }
 ```
 For a more elaborate use (audit page), check this [php](https://github.com/Simbiat/simbiat.dev/blob/master/lib/simbiat.ru/src/usercontrol/Pages/Sessions.php) (for backend) and [twig](https://github.com/Simbiat/simbiat.ru/blob/master/twig/usercontrol/sessions.twig) (for frontend) files.
