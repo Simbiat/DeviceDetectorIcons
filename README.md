@@ -36,3 +36,5 @@ Class has the following settings:
 - `array $namesToReplace` - names that will need to be replaced due to file systems' limitation or for other reasons (if customized).
 - `array $paths` - paths used by the class. Do not change, unless you know what you are doing.
 - `string $fallback` - default fallback icon relative to `$basePath`. Same as with `$basePath` you may need to use rewrite rules in the web server settings to make it accessible for clients.
+
+Note: while release versions are meant to match current release of DeviceDetector (with added datestamps to identify local changes between them), they _may_ lag behind a little bit or not change, if new DeviceDetector release did not have new entities.
