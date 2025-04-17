@@ -205,7 +205,7 @@ class DDCIcons
     private static function getIcon(string $name, string $path): ?string
     {
         #Replace certain names
-        $name = str_replace(array_keys(self::$namesToReplace), array_values(self::$namesToReplace), $name);
+        $name = str_replace(array_keys(self::$namesToReplace), self::$namesToReplace, $name);
         foreach (self::$extensionPriority as $extension) {
             if (file_exists(__DIR__.self::$paths['iconsRoot'].$path.'/'.$name.'.'.$extension)) {
                 return $path.'/'.$name.'.'.$extension;
