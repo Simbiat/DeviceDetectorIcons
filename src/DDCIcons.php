@@ -181,7 +181,7 @@ class DDCIcons
      */
     public static function getBrand(string $brand, ?string $type = null): string
     {
-        return self::$basePath.(self::getIcon($type, self::$paths['brand']) ?? self::getIcon($type ?? '', self::$paths['deviceType']) ?? self::$fallback);
+        return self::$basePath.(self::getIcon($brand, self::$paths['brand']) ?? self::getIcon($type ?? '', self::$paths['deviceType']) ?? self::$fallback);
     }
     
     /**
