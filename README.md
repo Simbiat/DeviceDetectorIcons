@@ -20,7 +20,7 @@ Functions available:
 - `getBrowser(string $browser, ?string $family = null, ?string $engine = null)`
 - `getBrowserFamily(string $family)`
 - `getBrowserEngine(string $engine)`
-- `getOS(string $OS, ?string $family = null)`
+- `getOS(string $os, ?string $family = null)`
 - `getOSFamily(string $family)`
 - `getClient(string $client, string $type)`
 - `getClientType(string $type)`

@@ -128,14 +128,14 @@ class DDCIcons
     
     /**
      * Get icon for an OS
-     * @param string      $OS     Name of the browser
+     * @param string      $os     Name of the browser
      * @param string|null $family Optional OS family to get icon if OS icon is not found
      *
      * @return string
      */
-    public static function getOS(string $OS, ?string $family = null): string
+    public static function getOS(string $os, ?string $family = null): string
     {
-        return self::$basePath.(self::getIcon($OS, self::$paths['os']) ?? self::getIcon($family ?? '', self::$paths['osFamily']) ?? self::getIcon('os', self::$paths['clientType']) ?? self::$fallback);
+        return self::$basePath.(self::getIcon($os, self::$paths['os']) ?? self::getIcon($family ?? '', self::$paths['osFamily']) ?? self::getIcon('os', self::$paths['clientType']) ?? self::$fallback);
     }
     
     /**
