@@ -31,10 +31,10 @@ Names of the functions should be self-explanatory, and all of them require at le
 
 Class has the following settings:
 
-- `string $basePath` - base path to be attached to the returned value, which will complete the value to a usable URL for your website. Note that you _may_ need to use rewrite rules in the web server settings to actually make the files accessible, though.
-- `array $extensionPriority` - priority of the file formats. If a folder has multiple versions of an icon, the fist one existing will be used. The lower case is expected both in the array and in the actual files.
-- `array $namesToReplace` - names that will need to be replaced due to file systems' limitation or for other reasons (if customized).
+- `string $base_path` - base path to be attached to the returned value, which will complete the value to a usable URL for your website. Note that you _may_ need to use rewrite rules in the web server settings to actually make the files accessible, though.
+- `array $extension_priority` - priority of the file formats. If a folder has multiple versions of an icon, the fist one existing will be used. The lower case is expected both in the array and in the actual files.
+- `array $names_to_replace` - names that will need to be replaced due to file systems' limitation or for other reasons (if customized).
 - `array $paths` - paths used by the class. Do not change, unless you know what you are doing.
-- `string $fallback` - default fallback icon relative to `$basePath`. Same as with `$basePath` you may need to use rewrite rules in the web server settings to make it accessible for clients.
+- `string $fallback` - default fallback icon relative to `$base_path`. Same as with `$base_path` you may need to use rewrite rules in the web server settings to make it accessible for clients.
 
 Note: while release versions are meant to match the current release of DeviceDetector (with added datestamps to identify local changes between them), they _may_ lag behind a little bit or not change, if new DeviceDetector release did not have new entities.
