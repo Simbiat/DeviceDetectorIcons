@@ -10,7 +10,7 @@ For format consistency sake some icons may have been edited slightly:
 - all icons were converted to lossless WebP format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed
 - names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ` respectively due to special symbols
 
-If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.dev/simplepages/devicedetector/).
+If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.eu/simplepages/devicedetector/).
 
 Collection also comes with a custom class `\Simbiat\DDCIcons` that can help get respective icon with support of variable images formats (with prioritization) and a fallback icon.  
 Functions available:
