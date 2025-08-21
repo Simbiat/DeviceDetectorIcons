@@ -1,14 +1,22 @@
 This is a collection of icons/logos for operating systems and various applications detected by [Matomo's Device Detector](https://github.com/matomo-org/device-detector) except AFNetworking apps (need specific names). Expected use case: an audit page showing data on past user logins or current sessions.  
-While most icons are 100% "official" (at the time of addition), for some more obscure or old ones I can't guarantee that a proper icon is being used. In fact, for some of them the icon/logo of the respective owning company or avatar of original creator is used.  
-For format consistency sake some icons may have been edited slightly:
+General logic of selecting an icon is like this:
 
-- spacing added to make up perfect squares
-- excessive spacing removed, but to still keep the square ratio
-- all icons with dimensions over 1200x1200 pixels were resized to 1200x1200 (I doubt that anyone would need larger versions for potential use cases)
-- side-text removed, unless necessary for differentiation of the icon from similar yet unrelated ones or essential to the logo
-- solid background removed (for transparency), unless it is part of the brand, or it was otherwise deemed important to readability
-- all icons were converted to lossless WebP format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed
-- names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ` respectively due to special symbols
+1. Use the latest official one, if exists
+2. Use the highest possible resolution, but no more than 1200x1200 pixels (unless SVG).
+3. Regardless of resolution, the icon should be without obvious blur or artefacts, where possible. This includes blur, pixelation, deformities and the like caused by resizing of the image (original was 200x200px, and was resized to 1000x1000px).
+4. If latest official one is of poor quality or of low resolution, but an older icon exists with better quality - prefer that one.
+5. If it is unclear what is the latest official icon (for example 2 different icons are used by the brand in multiple places), the one that is used most often based on search results or the one that is more recognizable (often same thing) should be used.
+6. Icon should have transparent background, unless it's part of a brand or the background is used in official application icon on application stores.
+7. Icon should not have text on it, unless it's integrated into an image, brand does not have a logo that's not just text (stylized or not) or lack of text will result in no differentiation from other distinct icons.
+8. If there is no official icon at all, unofficial one can be used, as long as it is distinct enough and follows other principles as well.
+9. In case of open source project with no official and no unofficial icons, avatar of original creator can be used. In case there is none, or it's not distinct enough, icon for the main programming language can be used or just name of the project.
+10. Regardless of the icon selected, it should be modified, if needed to have square ratio, but at the same as little whitespace around the actual elements of the icon as needed to maintain the square ratio.
+
+The above rules should be followed for new contributions as well. If they cannot be followed, this should be justified in PR description.
+
+For consistency’s sake all icons were converted to lossless WebP (and minimized with [TinyPNG](https://tinypng.com)) format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed. Format is not enforced for contributions, due to included PHP class, but use of WebP and TinyPNG is still recommended, when possible.
+
+In addition, names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ` respectively due to special symbols. If new contributions have special symbols as well, PHP class should be updated in same PR as well.
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.eu/simplepages/devicedetector/).
 
