@@ -16,7 +16,7 @@ The above rules should be followed for new contributions as well. If they cannot
 
 For consistency’s sake all icons were converted to lossless WebP (and minimized with [TinyPNG](https://tinypng.com)) format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed. Format is not enforced for contributions, due to included PHP class, but use of WebP and TinyPNG is still recommended, when possible.
 
-In addition, names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ` respectively due to special symbols. If new contributions have special symbols as well, PHP class should be updated in same PR as well.
+In addition, names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX`, `MariaDB/MySQL Knowledge Base` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ`, `MariaDB MySQL Knowledge Base` respectively due to special symbols. If new contributions have special symbols as well, PHP class should be updated in same PR as well.
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.eu/simplepages/devicedetector/).
 
