@@ -16,7 +16,24 @@ The above rules should be followed for new contributions as well. If they cannot
 
 For consistency’s sake all icons were converted to lossless WebP (and minimized with [TinyPNG](https://tinypng.com)) format except for `device/type`, `client/type`, `bot/category`, which are in SVG (all taken from [svgrepo](https://www.svgrepo.com/)) to allow adjusting their colors through CSS to suit the website's style, if needed. Format is not enforced for contributions, due to included PHP class, but use of WebP and TinyPNG is still recommended, when possible.
 
-In addition, names of the files for `OS/2`, `GNU/Linux`, `MTK / Nucleus`, `Perl REST::Client`, `HTTP:Tiny`, `AUX`, `MariaDB/MySQL Knowledge Base` were changed to `OS2`, `GNULinux`, `MTK  Nucleus`, `Perl RESTClient`, `HTTP Tiny`, `ＡＵＸ`, `MariaDB MySQL Knowledge Base` respectively due to special symbols. If new contributions have special symbols as well, PHP class should be updated in same PR as well.
+In addition, names of the files some items were changes as follows due to special symbols:
+
+```php
+public static array $names_to_replace = [
+        'OS/2' => 'OS2',
+        'GNU/Linux' => 'GNULinux',
+        'MTK / Nucleus' => 'MTK  Nucleus',
+        'Perl REST::Client' => 'Perl RESTClient',
+        'HTTP:Tiny' => 'HTTP Tiny',
+        'AUX' => 'ＡＵＸ',
+        'MariaDB/MySQL Knowledge Base' => 'MariaDB MySQL Knowledge Base',
+        'Sandoba//Crawler' => 'Sandoba Crawler',
+        'WeSEE:Search' => 'WeSEE Search',
+        'Yeti/Naverbot' => 'Yeti Naverbot'
+    ];
+```
+
+If new contributions have special symbols as well, PHP class should be updated in same PR as well.
 
 If desired, you can see all the icons from the collection on one page [here](https://www.simbiat.eu/simplepages/devicedetector/).
 
@@ -46,3 +63,35 @@ Class has the following settings:
 - `string $fallback` - default fallback icon relative to `$base_path`. Same as with `$base_path` you may need to use rewrite rules in the web server settings to make it accessible for clients.
 
 Note: while release versions are meant to match the current release of DeviceDetector (with added datestamps to identify local changes between them), they _may_ lag behind a little bit or not change, if new DeviceDetector release did not have new entities.
+
+Below bots are missing an icon, since it was not found or there are multiple entities that may be using respective bot without clear way to link them:
+* EMail Exractor
+* EmailWolf
+* Golfe
+* Inspici
+* IP-Guide Crawler
+* LTX71
+* MADBbot
+* MakeMerryBot
+* NalezenCzBot
+* nbertaupete95
+* NetLyzer FastProbe
+* NetResearchServer
+* NiceCrawler
+* Octopus
+* OmtrBot
+* Plukkie
+* Pompos
+* researchcyber.net
+* Robozilla
+* Ryowl
+* Scooter
+* ScoutJet
+* ScreenerBot
+* Seoscanners.net
+* SnoopSecInspect
+* Speedy
+* ThinkChaos
+* WebThumbnail
+* Willow Internet Crawler
+* Zao

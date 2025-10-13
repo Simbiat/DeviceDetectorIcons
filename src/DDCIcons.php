@@ -41,7 +41,10 @@ class DDCIcons
         'Perl REST::Client' => 'Perl RESTClient',
         'HTTP:Tiny' => 'HTTP Tiny',
         'AUX' => 'ＡＵＸ',
-        'MariaDB/MySQL Knowledge Base' => 'MariaDB MySQL Knowledge Base'
+        'MariaDB/MySQL Knowledge Base' => 'MariaDB MySQL Knowledge Base',
+        'Sandoba//Crawler' => 'Sandoba Crawler',
+        'WeSEE:Search' => 'WeSEE Search',
+        'Yeti/Naverbot' => 'Yeti Naverbot'
     ];
     
     /**
