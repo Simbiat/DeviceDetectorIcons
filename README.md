@@ -91,6 +91,7 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * Seoscanners.net
 * SnoopSecInspect
 * Speedy
+* Thinkbot
 * ThinkChaos
 * WebThumbnail
 * Willow Internet Crawler
