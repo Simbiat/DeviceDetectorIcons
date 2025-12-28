@@ -65,9 +65,11 @@ Class has the following settings:
 Note: while release versions are meant to match the current release of DeviceDetector (with added datestamps to identify local changes between them), they _may_ lag behind a little bit or not change, if new DeviceDetector release did not have new entities.
 
 Below bots are missing an icon, since it was not found or there are multiple entities that may be using respective bot without clear way to link them:
+* ABEvalBot
 * EMail Exractor
 * EmailWolf
 * Golfe
+* HanaleiBot
 * Inspici
 * IP-Guide Crawler
 * LTX71
@@ -82,12 +84,14 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * OmtrBot
 * Plukkie
 * Pompos
+* PrivacyPolicyBot
 * researchcyber.net
 * Robozilla
 * Ryowl
 * Scooter
 * ScoutJet
 * ScreenerBot
+* SeoCherryBot
 * Seoscanners.net
 * SnoopSecInspect
 * Speedy
