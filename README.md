@@ -97,6 +97,7 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * Speedy
 * Thinkbot
 * ThinkChaos
+* WanscannerBot
 * WebThumbnail
 * Willow Internet Crawler
 * Zao
