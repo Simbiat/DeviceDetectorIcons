@@ -73,35 +73,19 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * Golfe
 * HanaleiBot
 * ImportDomains
-* Inspici
-* IP-Guide Crawler
-* LTX71
-* MADBbot
-* MakeMerryBot
-* NalezenCzBot
 * nbertaupete95
 * NetLyzer FastProbe
-* NetResearchServer
-* NiceCrawler
 * Octopus
 * OmtrBot
-* Plukkie
-* Pompos
 * PrivacyPolicyBot
 * researchcyber.net
 * Robozilla
-* Ryowl
 * Scooter
-* ScoutJet
 * ScreenerBot
 * SeoCherryBot
 * Seoscanners.net
 * SnoopSecInspect
-* Speedy
 * Thinkbot
 * ThinkChaos
 * TprAdsTxtCrawler
-* WanscannerBot
-* WebThumbnail
-* Willow Internet Crawler
 * Zao
