@@ -67,18 +67,24 @@ Note: while release versions are meant to match the current release of DeviceDet
 Below bots are missing an icon, since it was not found or there are multiple entities that may be using respective bot without clear way to link them:
 
 * ABEvalBot
+* ArtelLeadRadar
 * domainprobe (it's not this [one](https://github.com/Surajchandraa/domainprobe))
 * Dormouse
 * EMail Exractor
 * EmailWolf
+* FinderGo
 * Golfe
+* Goosee-Audit
 * HanaleiBot
+* HubSeedsBot
 * ImportDomains
 * libredtail-http
 * nbertaupete95
 * NetLyzer FastProbe
 * Octopus
 * OmtrBot
+* PhishBucketRust
+* PostitLeadDiscovery
 * PrivacyPolicyBot
 * researchcyber.net
 * Robozilla
@@ -90,4 +96,5 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * Thinkbot
 * ThinkChaos
 * TprAdsTxtCrawler
+* WATCrawler
 * Zao
