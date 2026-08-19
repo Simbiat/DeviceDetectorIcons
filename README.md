@@ -86,6 +86,7 @@ Below bots are missing an icon, since it was not found or there are multiple ent
 * PhishBucketRust
 * PostitLeadDiscovery
 * PrivacyPolicyBot
+* ProspectorBR
 * recon-crawler
 * recon-engine
 * researchcyber.net
