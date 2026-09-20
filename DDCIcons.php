@@ -11,12 +11,14 @@ class DDCIcons
 {
     /**
      * Base for the path to return without trailing slash
+     *
      * @var string
      */
     public static string $base_path = '/assets/images/devicedetector';
 
     /**
      * Priority of extensions that can be used when searching for a file
+     *
      * @var array|string[]
      */
     public static array $extension_priority = [
@@ -33,6 +35,7 @@ class DDCIcons
 
     /**
      * List of names to be replaced due to file systems' limitations
+     *
      * @var array|string[]
      */
     public static array $names_to_replace = [
@@ -50,6 +53,7 @@ class DDCIcons
 
     /**
      * List of paths to use relative to the script file and without trailing slash
+     *
      * @var array|string[]
      */
     public static array $paths = [
@@ -69,12 +73,14 @@ class DDCIcons
 
     /**
      * Icon to use in case no icon is found relative to $base_path
+     *
      * @var string
      */
     public static string $fallback = '/Matomo.svg';
 
     /**
      * Get icon for a bot
+     *
      * @param string      $bot      Name of the bot
      * @param string|null $category Optional bot category to get icon if bot icon is not found
      *
@@ -87,6 +93,7 @@ class DDCIcons
 
     /**
      * Get icon for a bot category
+     *
      * @param string $category Bot category name
      *
      * @return string
@@ -98,6 +105,7 @@ class DDCIcons
 
     /**
      * Get icon for a browser
+     *
      * @param string      $browser Name of the browser
      * @param string|null $family  Optional browser family to get icon if browser icon is not found
      * @param string|null $engine  Optional browser engine to get icon if browser family icon is not found
@@ -111,6 +119,7 @@ class DDCIcons
 
     /**
      * Get icon for a browser family
+     *
      * @param string $family Name of the browser family
      *
      * @return string
@@ -122,6 +131,7 @@ class DDCIcons
 
     /**
      * Get icon for a browser engine
+     *
      * @param string $engine Name of the browser engine
      *
      * @return string
@@ -133,6 +143,7 @@ class DDCIcons
 
     /**
      * Get icon for an OS
+     *
      * @param string      $os     Name of the browser
      * @param string|null $family Optional OS family to get icon if OS icon is not found
      *
@@ -145,6 +156,7 @@ class DDCIcons
 
     /**
      * Get icon for an OS family
+     *
      * @param string $family Name of the OS family
      *
      * @return string
@@ -156,6 +168,7 @@ class DDCIcons
 
     /**
      * Get icon for a client
+     *
      * @param string $client Name of the client
      * @param string $type   Optional client type to get icon if client icon is not found
      *
@@ -168,6 +181,7 @@ class DDCIcons
 
     /**
      * Get icon for a client type
+     *
      * @param string $type Client type name
      *
      * @return string
@@ -179,6 +193,7 @@ class DDCIcons
 
     /**
      * Get icon for a brand
+     *
      * @param string      $brand Name of the brand
      * @param string|null $type  Optional device type to get icon if brand icon is not found
      *
@@ -191,6 +206,7 @@ class DDCIcons
 
     /**
      * Get icon for a device type
+     *
      * @param string $type Name of the device type
      *
      * @return string
@@ -202,6 +218,7 @@ class DDCIcons
 
     /**
      * Get the path to the icon
+     *
      * @param string $name Name of the file to check for
      * @param string $path Path to look in
      *
@@ -216,6 +233,7 @@ class DDCIcons
                 return $path.'/'.$name.'.'.$extension;
             }
         }
+
         return null;
     }
 }
