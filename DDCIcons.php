@@ -39,16 +39,16 @@ class DDCIcons
      * @var array|string[]
      */
     public static array $names_to_replace = [
-        'OS/2' => 'OS2',
-        'GNU/Linux' => 'GNULinux',
-        'MTK / Nucleus' => 'MTK  Nucleus',
-        'Perl REST::Client' => 'Perl RESTClient',
-        'HTTP:Tiny' => 'HTTP Tiny',
         'AUX' => 'ＡＵＸ',
+        'GNU/Linux' => 'GNULinux',
+        'HTTP:Tiny' => 'HTTP Tiny',
         'MariaDB/MySQL Knowledge Base' => 'MariaDB MySQL Knowledge Base',
+        'MTK / Nucleus' => 'MTK  Nucleus',
+        'OS/2' => 'OS2',
+        'Perl REST::Client' => 'Perl RESTClient',
         'Sandoba//Crawler' => 'Sandoba Crawler',
         'WeSEE:Search' => 'WeSEE Search',
-        'Yeti/Naverbot' => 'Yeti Naverbot'
+        'Yeti/Naverbot' => 'Yeti Naverbot',
     ];
 
     /**
@@ -57,18 +57,18 @@ class DDCIcons
      * @var array|string[]
      */
     public static array $paths = [
-        'icons_root' => '/icons',
         'bot' => '/bot',
         'bot_category' => '/bot/category',
+        'brand' => '/device/brand',
+        'browser' => '/client/browser',
+        'browser_engine' => '/client/browser/engine',
+        'browser_family' => '/client/browser/family',
         'client_root' => '/client',
         'client_type' => '/client/type',
-        'browser' => '/client/browser',
-        'browser_family' => '/client/browser/family',
-        'browser_engine' => '/client/browser/engine',
+        'device_type' => '/device/type',
+        'icons_root' => '/icons',
         'os' => '/client/os',
         'os_family' => '/client/os/family',
-        'brand' => '/device/brand',
-        'device_type' => '/device/type',
     ];
 
     /**
