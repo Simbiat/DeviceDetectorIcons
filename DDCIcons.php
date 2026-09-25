@@ -7,7 +7,7 @@ namespace Simbiat;
 /**
  * Class to provide a path to icons for Matomo Device Detector
  */
-class DDCIcons
+final class DDCIcons
 {
     /**
      * Base for the path to return without trailing slash
