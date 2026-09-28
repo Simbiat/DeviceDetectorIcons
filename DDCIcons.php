@@ -19,7 +19,7 @@ final class DDCIcons
     /**
      * Priority of extensions that can be used when searching for a file
      *
-     * @var array|string[]
+     * @var array<int, string>
      */
     public static array $extension_priority = [
         0 => 'svg',
@@ -36,7 +36,7 @@ final class DDCIcons
     /**
      * List of names to be replaced due to file systems' limitations
      *
-     * @var array|string[]
+     * @var array<string, string>
      */
     public static array $names_to_replace = [
         'AUX' => 'ＡＵＸ',
@@ -54,7 +54,7 @@ final class DDCIcons
     /**
      * List of paths to use relative to the script file and without trailing slash
      *
-     * @var array|string[]
+     * @var array<string, string>
      */
     public static array $paths = [
         'bot' => '/bot',
