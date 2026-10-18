@@ -5,19 +5,19 @@ declare(strict_types=1);
 namespace Simbiat;
 
 /**
- * Class to provide a path to icons for Matomo Device Detector
+ * Class to provide a path to icons for Matomo Device Detector.
  */
 final class DDCIcons
 {
     /**
-     * Base for the path to return without trailing slash
+     * Base for the path to return without trailing slash.
      *
      * @var string
      */
     public static string $base_path = '/assets/images/devicedetector';
 
     /**
-     * Priority of extensions that can be used when searching for a file
+     * Priority of extensions that can be used when searching for a file.
      *
      * @var array<int, string>
      */
@@ -34,7 +34,7 @@ final class DDCIcons
     ];
 
     /**
-     * List of names to be replaced due to file systems' limitations
+     * List of names to be replaced due to file systems' limitations.
      *
      * @var array<string, string>
      */
@@ -52,7 +52,7 @@ final class DDCIcons
     ];
 
     /**
-     * List of paths to use relative to the script file and without trailing slash
+     * List of paths to use relative to the script file and without trailing slash.
      *
      * @var array<string, string>
      */
@@ -72,17 +72,17 @@ final class DDCIcons
     ];
 
     /**
-     * Icon to use in case no icon is found relative to $base_path
+     * Icon to use in case no icon is found relative to $base_path.
      *
      * @var string
      */
     public static string $fallback = '/Matomo.svg';
 
     /**
-     * Get icon for a bot
+     * Get icon for a bot.
      *
      * @param string      $bot      Name of the bot
-     * @param string|null $category Optional bot category to get icon if bot icon is not found
+     * @param null|string $category Optional bot category to get icon if bot icon is not found
      *
      * @return string
      */
@@ -92,7 +92,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a bot category
+     * Get icon for a bot category.
      *
      * @param string $category Bot category name
      *
@@ -104,11 +104,11 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a browser
+     * Get icon for a browser.
      *
      * @param string      $browser Name of the browser
-     * @param string|null $family  Optional browser family to get icon if browser icon is not found
-     * @param string|null $engine  Optional browser engine to get icon if browser family icon is not found
+     * @param null|string $family  Optional browser family to get icon if browser icon is not found
+     * @param null|string $engine  Optional browser engine to get icon if browser family icon is not found
      *
      * @return string
      */
@@ -118,7 +118,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a browser family
+     * Get icon for a browser family.
      *
      * @param string $family Name of the browser family
      *
@@ -130,7 +130,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a browser engine
+     * Get icon for a browser engine.
      *
      * @param string $engine Name of the browser engine
      *
@@ -142,10 +142,10 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for an OS
+     * Get icon for an OS.
      *
      * @param string      $os     Name of the browser
-     * @param string|null $family Optional OS family to get icon if OS icon is not found
+     * @param null|string $family Optional OS family to get icon if OS icon is not found
      *
      * @return string
      */
@@ -155,7 +155,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for an OS family
+     * Get icon for an OS family.
      *
      * @param string $family Name of the OS family
      *
@@ -167,7 +167,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a client
+     * Get icon for a client.
      *
      * @param string $client Name of the client
      * @param string $type   Optional client type to get icon if client icon is not found
@@ -180,7 +180,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a client type
+     * Get icon for a client type.
      *
      * @param string $type Client type name
      *
@@ -192,10 +192,10 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a brand
+     * Get icon for a brand.
      *
      * @param string      $brand Name of the brand
-     * @param string|null $type  Optional device type to get icon if brand icon is not found
+     * @param null|string $type  Optional device type to get icon if brand icon is not found
      *
      * @return string
      */
@@ -205,7 +205,7 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a device type
+     * Get icon for a device type.
      *
      * @param string $type Name of the device type
      *
@@ -217,12 +217,12 @@ final class DDCIcons
     }
 
     /**
-     * Get the path to the icon
+     * Get the path to the icon.
      *
      * @param string $name Name of the file to check for
      * @param string $path Path to look in
      *
-     * @return string|null
+     * @return null|string
      */
     private static function getIcon(string $name, string $path): ?string
     {
