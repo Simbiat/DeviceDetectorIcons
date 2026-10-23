@@ -34,6 +34,13 @@ final class DDCIcons
     ];
 
     /**
+     * Icon to use in case no icon is found relative to $base_path.
+     *
+     * @var string
+     */
+    public static string $fallback = '/Matomo.svg';
+
+    /**
      * List of names to be replaced due to file systems' limitations.
      *
      * @var array<string, string>
@@ -72,17 +79,10 @@ final class DDCIcons
     ];
 
     /**
-     * Icon to use in case no icon is found relative to $base_path.
-     *
-     * @var string
-     */
-    public static string $fallback = '/Matomo.svg';
-
-    /**
      * Get icon for a bot.
      *
      * @param string      $bot      Name of the bot
-     * @param null|string $category Optional bot category to get icon if bot icon is not found
+     * @param string|null $category Optional bot category to get icon if bot icon is not found
      *
      * @return string
      */
@@ -104,29 +104,30 @@ final class DDCIcons
     }
 
     /**
+     * Get icon for a brand.
+     *
+     * @param string      $brand Name of the brand
+     * @param string|null $type  Optional device type to get icon if brand icon is not found
+     *
+     * @return string
+     */
+    public static function getBrand(string $brand, ?string $type = null): string
+    {
+        return self::$base_path.(self::getIcon($brand, self::$paths['brand']) ?? self::getIcon($type ?? '', self::$paths['device_type']) ?? self::$fallback);
+    }
+
+    /**
      * Get icon for a browser.
      *
      * @param string      $browser Name of the browser
-     * @param null|string $family  Optional browser family to get icon if browser icon is not found
-     * @param null|string $engine  Optional browser engine to get icon if browser family icon is not found
+     * @param string|null $family  Optional browser family to get icon if browser icon is not found
+     * @param string|null $engine  Optional browser engine to get icon if browser family icon is not found
      *
      * @return string
      */
     public static function getBrowser(string $browser, ?string $family = null, ?string $engine = null): string
     {
         return self::$base_path.(self::getIcon($browser, self::$paths['browser']) ?? self::getIcon($family ?? '', self::$paths['browser_family']) ?? self::getIcon($engine ?? '', self::$paths['browser_engine']) ?? self::getIcon('browser', self::$paths['client_type']) ?? self::$fallback);
-    }
-
-    /**
-     * Get icon for a browser family.
-     *
-     * @param string $family Name of the browser family
-     *
-     * @return string
-     */
-    public static function getBrowserFamily(string $family): string
-    {
-        return self::$base_path.(self::getIcon($family, self::$paths['browser_family']) ?? self::$fallback);
     }
 
     /**
@@ -142,28 +143,15 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for an OS.
+     * Get icon for a browser family.
      *
-     * @param string      $os     Name of the browser
-     * @param null|string $family Optional OS family to get icon if OS icon is not found
-     *
-     * @return string
-     */
-    public static function getOS(string $os, ?string $family = null): string
-    {
-        return self::$base_path.(self::getIcon($os, self::$paths['os']) ?? self::getIcon($family ?? '', self::$paths['os_family']) ?? self::getIcon('os', self::$paths['client_type']) ?? self::$fallback);
-    }
-
-    /**
-     * Get icon for an OS family.
-     *
-     * @param string $family Name of the OS family
+     * @param string $family Name of the browser family
      *
      * @return string
      */
-    public static function getOSFamily(string $family): string
+    public static function getBrowserFamily(string $family): string
     {
-        return self::$base_path.(self::getIcon($family, self::$paths['os_family']) ?? self::$fallback);
+        return self::$base_path.(self::getIcon($family, self::$paths['browser_family']) ?? self::$fallback);
     }
 
     /**
@@ -192,19 +180,6 @@ final class DDCIcons
     }
 
     /**
-     * Get icon for a brand.
-     *
-     * @param string      $brand Name of the brand
-     * @param null|string $type  Optional device type to get icon if brand icon is not found
-     *
-     * @return string
-     */
-    public static function getBrand(string $brand, ?string $type = null): string
-    {
-        return self::$base_path.(self::getIcon($brand, self::$paths['brand']) ?? self::getIcon($type ?? '', self::$paths['device_type']) ?? self::$fallback);
-    }
-
-    /**
      * Get icon for a device type.
      *
      * @param string $type Name of the device type
@@ -217,12 +192,37 @@ final class DDCIcons
     }
 
     /**
+     * Get icon for an OS.
+     *
+     * @param string      $os     Name of the browser
+     * @param string|null $family Optional OS family to get icon if OS icon is not found
+     *
+     * @return string
+     */
+    public static function getOS(string $os, ?string $family = null): string
+    {
+        return self::$base_path.(self::getIcon($os, self::$paths['os']) ?? self::getIcon($family ?? '', self::$paths['os_family']) ?? self::getIcon('os', self::$paths['client_type']) ?? self::$fallback);
+    }
+
+    /**
+     * Get icon for an OS family.
+     *
+     * @param string $family Name of the OS family
+     *
+     * @return string
+     */
+    public static function getOSFamily(string $family): string
+    {
+        return self::$base_path.(self::getIcon($family, self::$paths['os_family']) ?? self::$fallback);
+    }
+
+    /**
      * Get the path to the icon.
      *
      * @param string $name Name of the file to check for
      * @param string $path Path to look in
      *
-     * @return null|string
+     * @return string|null
      */
     private static function getIcon(string $name, string $path): ?string
     {
