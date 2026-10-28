@@ -6,6 +6,8 @@ namespace Simbiat;
 
 /**
  * Class to provide a path to icons for Matomo Device Detector.
+ *
+ * @api
  */
 final class DDCIcons
 {
@@ -56,6 +58,7 @@ final class DDCIcons
         'Sandoba//Crawler' => 'Sandoba Crawler',
         'WeSEE:Search' => 'WeSEE Search',
         'Yeti/Naverbot' => 'Yeti Naverbot',
+        'Numpuz: Classic Number Games' => 'Numpuz Classic Number Games',
     ];
 
     /**
@@ -85,6 +88,8 @@ final class DDCIcons
      * @param string|null $category Optional bot category to get icon if bot icon is not found
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBot(string $bot, ?string $category = null): string
     {
@@ -97,6 +102,8 @@ final class DDCIcons
      * @param string $category Bot category name
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBotCategory(string $category): string
     {
@@ -110,6 +117,8 @@ final class DDCIcons
      * @param string|null $type  Optional device type to get icon if brand icon is not found
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBrand(string $brand, ?string $type = null): string
     {
@@ -124,6 +133,8 @@ final class DDCIcons
      * @param string|null $engine  Optional browser engine to get icon if browser family icon is not found
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBrowser(string $browser, ?string $family = null, ?string $engine = null): string
     {
@@ -136,6 +147,8 @@ final class DDCIcons
      * @param string $engine Name of the browser engine
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBrowserEngine(string $engine): string
     {
@@ -148,6 +161,8 @@ final class DDCIcons
      * @param string $family Name of the browser family
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getBrowserFamily(string $family): string
     {
@@ -173,6 +188,8 @@ final class DDCIcons
      * @param string $type Client type name
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getClientType(string $type): string
     {
@@ -185,6 +202,8 @@ final class DDCIcons
      * @param string $type Name of the device type
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getDeviceType(string $type): string
     {
@@ -210,6 +229,8 @@ final class DDCIcons
      * @param string $family Name of the OS family
      *
      * @return string
+     *
+     * @noinspection PhpUnused
      */
     public static function getOSFamily(string $family): string
     {
