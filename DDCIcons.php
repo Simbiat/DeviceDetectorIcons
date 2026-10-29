@@ -53,12 +53,12 @@ final class DDCIcons
         'HTTP:Tiny' => 'HTTP Tiny',
         'MariaDB/MySQL Knowledge Base' => 'MariaDB MySQL Knowledge Base',
         'MTK / Nucleus' => 'MTK  Nucleus',
+        'Numpuz: Classic Number Games' => 'Numpuz Classic Number Games',
         'OS/2' => 'OS2',
         'Perl REST::Client' => 'Perl RESTClient',
         'Sandoba//Crawler' => 'Sandoba Crawler',
         'WeSEE:Search' => 'WeSEE Search',
         'Yeti/Naverbot' => 'Yeti Naverbot',
-        'Numpuz: Classic Number Games' => 'Numpuz Classic Number Games',
     ];
 
     /**
